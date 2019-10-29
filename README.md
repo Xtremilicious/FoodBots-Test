@@ -1,3 +1,5 @@
+Website: https://xtremilicious.github.io/FoodBots-Test
+
 # Order Summary page of a customer’s latest order
 Assignment for Web Dev Internship at Food Bots (Kumba).
 Technologies used: HTML, CSS and JavaScript.
