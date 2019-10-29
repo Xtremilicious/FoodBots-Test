@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Food Bots Assignment - Nilarjun Das</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="rest-info">
+            <div id="rest-container"></div>
+            <div id="username-container"></div>
+        </div>
+        <div class="subcontainer">
+            <div id="item-info">
+                <table id="item-table" class="item-list">
+                </table>
+
+            </div>
+            <div id="order-summary">
+                <div class="order-summ">
+                    <div class="order-intro">Order Summary</div>
+                    <div class="pay-info">
+                        <div class="pay-info-title">Item Total:</div>
+                        <div id="item-total-price" class="pay-info-price"></div>
+                    </div>
+                    <div class="pay-info">
+                        <div class="pay-info-title">Packing Charges:</div>
+                        <div class="pay-info-price">INR 0.00</div>
+                    </div>
+                    <div class="pay-info">
+                        <div class="pay-info-title">GST:</div>
+                        <div id="item-total-tax" class="pay-info-price"></div>
+                    </div>
+                    <div class="pay-info">
+                        <div class="pay-info-title">Delivery Charges:</div>
+                        <div class="pay-info-price">INR 0.00</div>
+                    </div>
+                    <div class="pay-info-final">
+                        <div class="pay-final-title">To Pay:</div>
+                        <div id="item-total-payable" class="pay-final-price"></div>
+                    </div>
+
+                </div>
+                <button class="btn">CHECKOUT</button>
+                <div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

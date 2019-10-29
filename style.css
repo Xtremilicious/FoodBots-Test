@@ -1,0 +1,191 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+  background: #fafafa;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 20vh 80vh;
+}
+.rest-info {
+  height: 20vh;
+  width: 100vw;
+  background: #f6f6f6;
+  display: grid;
+    grid-template-columns: 1fr 1fr;
+  align-items: center;
+  box-shadow: 0 3px 2px -2px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+#rest-container {
+  padding-left: 2rem;
+}
+#username-container {
+    padding-right: 2rem;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+.noob {
+  background: red;
+}
+.rest-name {
+  font-size: 2rem;
+}
+.rest-addr1,
+.rest-addr2 {
+  font-size: 1rem;
+  color: #6e6e6e;
+}
+.subcontainer {
+  position: fixed;
+  top: 20vh;
+  height: 80vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  overflow-y: scroll;
+}
+.item-list {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  z-index: 0;
+  background: #FAFAFA;
+  
+}
+.item-list th {
+  padding: 1rem;
+
+  border-bottom: 2px solid #f2f2f2;
+}
+.item-list td {
+  padding: 1rem;
+  border-bottom: 2px dashed #f2f2f2;
+}
+.item-price{
+    text-align: right;
+    border-right: 2px dashed #f2f2f2;
+}
+.item-quantity{
+    text-align: left;
+}
+.food-item {
+  font-size: 1.3rem;
+}
+.food-cat {
+  font-size: 1.1rem;
+  color: #6e6e6e;
+}
+#order-summary {
+  width:100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+.order-summ {
+  width:80%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #f2f2f2;
+  border-inline-style: dashed;
+  box-sizing: border-box;
+}
+.order-intro {
+  margin: 1rem;
+  font-size: 2rem;
+}
+.pay-info {
+  width: inherit;
+
+  display: grid;
+  color: #6e6e6e;
+  padding: 0.3rem 0rem 0.3rem 0rem;
+  grid-template-columns: 1fr 1fr;
+}
+.pay-info-title {
+  display: flex;
+  justify-content: flex-start;
+}
+.pay-info-price {
+  display: flex;
+  justify-content: flex-end;
+}
+.pay-info-final {
+    margin-top: 1rem;
+    border-top: 2px solid #f2f2f2;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 1.3rem;
+  color: #5FB404;
+}
+.pay-final-title{
+    display: flex;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom:1rem;
+    justify-content: flex-start;
+}
+.pay-final-price{
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom:1rem;
+    padding-right: 1rem;
+    justify-content: flex-end;
+}
+.btn{
+    width: 80%;
+    padding: 1rem;
+    background: orange;
+    border: none;
+    border-radius: 0 0 0.3rem 0.3rem;
+    color: #fafafa;
+    font-size: 1.1rem;
+    cursor: pointer;
+    outline: none;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .subcontainer{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .rest-name {
+    font-size: 1.1rem;
+  }
+  .rest-addr1,
+  .rest-addr2 {
+    font-size: 0.7rem;
+  }
+  .item-list td {
+    padding: 0.6rem;
+    border-bottom: 2px dashed #f2f2f2;
+  }
+  .food-item {
+    font-size: 1.1rem;
+  }
+  .food-cat {
+    font-size: 0.8rem;
+    color: #6e6e6e;
+  }
+  #order-summary {
+    padding-top:2rem;
+    padding-bottom:2rem;
+  
+  }
+  .order-intro {
+    font-size: 1.3rem;
+  }
+  .pay-info-final{
+    font-size: 1.2rem;
+  }
+}
